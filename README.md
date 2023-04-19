@@ -97,10 +97,6 @@ None. Displays a plot of the 15 features with the highest coefficients.
 **Model Training and Evaluation**
 The cleaned X and y variables are split into training and testing sets using the train_test_split() function. The logistic regression model is created using the LogisticRegression() class with a max_iter parameter of 3. The model is then trained on the training data using the fit() method. The trained model is used to make predictions on the test data using the predict() method. The accuracy of the model is evaluated using the `
 
-## Medium Post
-
-For a more explanation of the analysis, you can read the Medium post at: https://medium.com/@aussa.tris/exploring-the-seattle-airbnb-landscape-67b5aa639b8
-
 ## Acknowledgement
 
 - Airbnb Inside: This dataset is part of Airbnb Inside, and the original source can be found here: http://insideairbnb.com/get-the-data/. The data provided by Airbnb Inside was instrumental in conducting the analysis and drawing insights about the Seattle Airbnb landscape.
