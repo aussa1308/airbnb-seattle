@@ -2,13 +2,35 @@
 
 This repository contains code that analyzes Airbnb booking data in Seattle, WA, and uses logistic regression to predict whether a listing is booked or not. The analysis includes data cleaning, feature engineering, and model training and evaluation.
 
-## Dataset
+## Project Motivation
 
-The dataset used in this analysis is the Seattle Airbnb Data. It contains information about Airbnb listings that consists of three files:
+For this project, I was interested in using Airbnb booking data in Seattle to better understand:
+- What is the booking trend of Airbnb in Seattle?
+- Which neighborhood in Seattle has the highest booking rate?
+- What is the most influential factor that influences users' property booking decisions?
 
-- `listings.csv`: Detailed information about each listing, such as property type, price, location, and more.
-- `calendar.csv`: Availability and price information for each listing on a daily basis.
-- `reviews.csv`: Detailed reviews left by guests for each listing.
+## Library Used
+
+The following python libraries were used in this project:
+- pandas==0.20.1
+- numpy==1.13.3
+- matplotlib==2.0.0
+- scikit-learn==0.19.1
+
+## Installation
+
+This code runs with Python version 3.6 and require some libraries, to install there libraries you will need to execute:
+`pip install -r requirements.txt`
+
+## File Description
+
+The file used in this analysis is the Seattle Airbnb Data. It contains information about Airbnb listings that consists of five files:
+
+- `data/listings.csv`: Detailed information about each listing, such as property type, price, location, and more.
+- `data/calendar.csv`: Availability and price information for each listing on a daily basis.
+- `data/reviews.csv`: Detailed reviews left by guests for each listing.
+- `seattle_airbnb_exploration.ipynb`: Notebook containing the data analysis
+- `requirements.txt`: List of libraries used in this project
 
 ## Functions
 **generate_booking_trend(calendar)**
@@ -78,3 +100,11 @@ The cleaned X and y variables are split into training and testing sets using the
 ## Medium Post
 
 For a more explanation of the analysis, you can read the Medium post at: https://medium.com/@aussa.tris/exploring-the-seattle-airbnb-landscape-67b5aa639b8
+
+## Acknowledgement
+
+- Airbnb Inside: This dataset is part of Airbnb Inside, and the original source can be found here: http://insideairbnb.com/get-the-data/. The data provided by Airbnb Inside was instrumental in conducting the analysis and drawing insights about the Seattle Airbnb landscape.
+
+- Python Libraries: This project utilized various Python libraries such as pandas, numpy, matplotlib, and scikit-learn for data cleaning, feature engineering, and model training. These open-source libraries have been developed and maintained by the Python community, and their contributions are invaluable to the data science community.
+
+- Medium Post: The analysis and findings of this project were shared in a Medium post (https://medium.com/@aussa.tris/exploring-the-seattle-airbnb-landscape-67b5aa639b8). The Medium platform provided an opportunity to share insights and engage with a wider audience.
